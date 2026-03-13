@@ -1,0 +1,59 @@
+﻿@using Project3Travelin.Models
+@model TourDetailViewModel
+
+<h2>@Model.Tour.Title</h2>
+
+<img src="@Model.Tour.ImageUrl" style="width:500px" />
+
+<p>@Model.Tour.Description</p>
+
+<p><b>Ülke:</b> @Model.Tour.Country</p>
+
+<p><b>Şehir:</b> @Model.Tour.City</p>
+
+<p><b>Tarih:</b> @Model.Tour.TourDate.ToString("dd.MM.yyyy")</p>
+
+<p><b>Kapasite:</b> @Model.Tour.Capacity</p>
+
+<p><b>Süre:</b> @Model.Tour.DayNight</p>
+
+<a href="/Booking/CreateBooking/@Model.Tour.TourId" class="btn btn-primary">
+    Rezervasyon Yap
+</a>
+
+<hr />
+
+<h3>Tur Programı</h3>
+
+@if (Model.TourPrograms != null && Model.TourPrograms.Any())
+{
+    <ul>
+        @foreach (var item in Model.TourPrograms)
+        {
+            <li>
+                <b>@item.DayTitle</b> - @item.Description
+            </li>
+        }
+    </ul>
+}
+else
+{
+    <p>Bu tura ait program bilgisi henüz eklenmemiş.</p>
+}
+<hr />
+
+<h3>Tanıtım Videosu</h3>
+
+@if (!string.IsNullOrEmpty(Model.Tour.VideoUrl))
+{
+    <iframe width="560" height="315"
+            src="@Model.Tour.VideoUrl"
+            title="YouTube video player"
+            frameborder="0"
+            allowfullscreen>
+    </iframe>
+}
+else
+{
+    <p>Bu tura ait video henüz eklenmemiş.</p>
+}

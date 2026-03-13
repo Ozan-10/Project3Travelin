@@ -1,0 +1,128 @@
+﻿@{
+    ViewData["Title"] = "Tur Yorumları";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<div class="container mt-4">
+    <div class="d-flex justify-content-between align-items-center mb-4">
+        <div>
+            <h2 class="fw-bold mb-1">Paris Işıklar Şehri Turu</h2>
+            <p class="text-muted mb-0">Tura ait misafir yorumları</p>
+        </div>
+
+        <a href="/AdminTour/TourList" class="btn btn-outline-secondary btn-sm">
+            ← Tur Listesine Dön
+        </a>
+    </div>
+
+    <div class="row g-3 mb-4">
+        <div class="col-md-4">
+            <div class="card shadow-sm border-0 text-center h-100">
+                <div class="card-body">
+                    <h2 class="fw-bold text-warning mb-1">4,7</h2>
+                    <p class="text-muted mb-0">Ortalama Puan</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-md-4">
+            <div class="card shadow-sm border-0 text-center h-100">
+                <div class="card-body">
+                    <h2 class="fw-bold text-primary mb-1">3</h2>
+                    <p class="text-muted mb-0">Toplam Yorum</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-md-4">
+            <div class="card shadow-sm border-0 text-center h-100">
+                <div class="card-body">
+                    <h2 class="fw-bold text-success mb-1">3</h2>
+                    <p class="text-muted mb-0">Olumlu Yorum (4.5 +)</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="card shadow-sm border-0">
+        <div class="card-body p-0">
+            <div class="table-responsive">
+                <table class="table align-middle mb-0">
+                    <thead class="table-light">
+                        <tr>
+                            <th class="ps-4">MİSAFİR</th>
+                            <th>PUAN</th>
+                            <th>YORUM</th>
+                            <th>TARİH</th>
+                            <th>DURUM</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td class="ps-4">
+                                <div class="d-flex align-items-center gap-3">
+                                    <div class="rounded-circle bg-light d-flex align-items-center justify-content-center fw-bold"
+                                         style="width:38px;height:38px;">
+                                        M
+                                    </div>
+                                    <span class="fw-semibold">Muhteşem Bir Turdu</span>
+                                </div>
+                            </td>
+                            <td>
+                                <span class="text-warning">★★★★★</span>
+                                <small class="text-muted">5/5</small>
+                            </td>
+                            <td>Özellikle rehberimizin enerjisi ve anlatımı çok iyiydi. Tekrar katılmak isterim.</td>
+                            <td>01.01.0001</td>
+                            <td>
+                                <span class="badge bg-success">Yayında</span>
+                            </td>
+                        </tr>
+
+                        <tr>
+                            <td class="ps-4">
+                                <div class="d-flex align-items-center gap-3">
+                                    <div class="rounded-circle bg-light d-flex align-items-center justify-content-center fw-bold"
+                                         style="width:38px;height:38px;">
+                                        O
+                                    </div>
+                                    <span class="fw-semibold">Organizasyon Çok Başarılıydı</span>
+                                </div>
+                            </td>
+                            <td>
+                                <span class="text-warning">★★★★★</span>
+                                <small class="text-muted">5/5</small>
+                            </td>
+                            <td>Ulaşım, konaklama ve rehber hizmeti gerçekten çok kaliteliydi. Çok memnun kaldım.</td>
+                            <td>01.01.0001</td>
+                            <td>
+                                <span class="badge bg-success">Yayında</span>
+                            </td>
+                        </tr>
+
+                        <tr>
+                            <td class="ps-4">
+                                <div class="d-flex align-items-center gap-3">
+                                    <div class="rounded-circle bg-light d-flex align-items-center justify-content-center fw-bold"
+                                         style="width:38px;height:38px;">
+                                        K
+                                    </div>
+                                    <span class="fw-semibold">Keyifli Bir Deneyim</span>
+                                </div>
+                            </td>
+                            <td>
+                                <span class="text-warning">★★★★☆</span>
+                                <small class="text-muted">4/5</small>
+                            </td>
+                            <td>Program oldukça doluydu ama buna rağmen yorulmadan gezdik. Güzel bir deneyimdi.</td>
+                            <td>23.02.2026</td>
+                            <td>
+                                <span class="badge bg-success">Yayında</span>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+</div>

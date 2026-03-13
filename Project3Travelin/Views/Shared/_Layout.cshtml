@@ -1,0 +1,29 @@
+﻿<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="utf-8" />
+    <title>Admin Panel</title>
+
+    <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
+
+    @RenderSection("Styles", required: false)
+</head>
+
+<body>
+
+    <!-- HEADER -->
+    <div style="background:#111827;color:white;padding:15px">
+        <h3>TourAdmin Panel</h3>
+    </div>
+
+    <!-- SAYFA İÇERİĞİ BURAYA GELİR -->
+    <div class="container mt-4">
+        @RenderBody()
+    </div>
+
+    <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+
+    @RenderSection("Scripts", required: false)
+
+</body>
+</html>

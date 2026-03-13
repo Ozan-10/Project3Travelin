@@ -1,0 +1,46 @@
+﻿@using Project3Travelin.Dtos.BookingDtos
+@model List<ResultBookingDto>
+
+<h2>Roma Turu - Rezervasyon Listesi</h2>
+
+
+@if (Model.Any())
+{
+    <div style="margin-bottom:20px;">
+        <img src="@Model.First().TourImageUrl"
+             alt="Tur Fotoğrafı"
+             style="width:350px;height:200px;object-fit:cover;border-radius:10px;" />
+    </div>
+}
+
+<table class="table table-bordered">
+    <tr>
+        <th>Ad Soyad</th>
+        <th>Email</th>
+        <th>Kişi Sayısı</th>
+        <th>Tarih</th>
+        <th>Durum</th>
+        <th>İşlem</th>
+    </tr>
+
+    @foreach (var item in Model)
+    {
+        <tr>
+            <td>@item.Name</td>
+            <td>@item.Email</td>
+            <td>@item.PersonCount</td>
+            <td>@item.Date.ToString("dd.MM.yyyy")</td>
+            <td>@(item.IsApproved ? "Onaylandı" : "Beklemede")</td>
+            <td>
+                @if (!item.IsApproved)
+                {
+                    <a href="/AdminBooking/ApproveBooking/@item.BookingId"
+                       class="btn btn-success btn-sm">Onayla</a>
+                }
+
+                <a href="/AdminBooking/DeleteBooking/@item.BookingId"
+                   class="btn btn-danger btn-sm">Sil</a>
+            </td>
+        </tr>
+    }
+</table>

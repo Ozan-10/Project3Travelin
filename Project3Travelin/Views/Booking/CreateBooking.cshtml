@@ -1,0 +1,118 @@
+﻿@model Project3Travelin.Dtos.BookingDtos.CreateBookingDto
+
+@{
+    ViewData["Title"] = "Rezervasyon Yap";
+}
+
+<div class="container mt-4">
+    <div class="row g-4">
+
+        <div class="col-md-8">
+            <div class="card shadow-sm border-0 rounded-4">
+                <div class="card-body">
+                    <h2 class="mb-4 fw-bold">Rezervasyon Yap</h2>
+
+                    <form method="post">
+                        <input type="hidden" asp-for="TourId" />
+
+                        <div class="mb-3">
+                            <label class="form-label">Ad Soyad</label>
+                            <input type="text" asp-for="Name" class="form-control" />
+                        </div>
+
+                        <div class="mb-3">
+                            <label class="form-label">Email</label>
+                            <input type="email" asp-for="Email" class="form-control" />
+                        </div>
+
+                        <div class="mb-3">
+                            <label class="form-label">Kişi Sayısı</label>
+                            <input type="number" asp-for="PersonCount" class="form-control" id="personCountInput" min="1" />
+                        </div>
+
+                        <div class="mb-4">
+                            <label class="form-label">Tarih</label>
+                            <input type="date" asp-for="Date" class="form-control" />
+                        </div>
+
+                        <div class="border rounded-4 p-4 mb-4">
+                            <h4 class="mb-3">Ödeme Bilgileri</h4>
+
+                            <div class="mb-3">
+                                <label class="form-label">Kart Üzerindeki İsim</label>
+                                <input type="text" asp-for="CardHolderName" class="form-control" placeholder="AD SOYAD" />
+                            </div>
+
+                            <div class="mb-3">
+                                <label class="form-label">Kart Numarası</label>
+                                <input type="text" asp-for="CardNumber" class="form-control" placeholder="0000 0000 0000 0000" />
+                            </div>
+
+                            <div class="row">
+                                <div class="col-md-4">
+                                    <label class="form-label">Ay</label>
+                                    <input type="text" asp-for="ExpireMonth" class="form-control" placeholder="AA" />
+                                </div>
+
+                                <div class="col-md-4">
+                                    <label class="form-label">Yıl</label>
+                                    <input type="text" asp-for="ExpireYear" class="form-control" placeholder="YY" />
+                                </div>
+
+                                <div class="col-md-4">
+                                    <label class="form-label">CVV</label>
+                                    <input type="text" asp-for="Cvv" class="form-control" placeholder="***" />
+                                </div>
+                            </div>
+                        </div>
+
+                        <button type="submit" class="btn btn-success btn-lg w-100">
+                            Rezervasyonu Öde
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-md-4">
+            <div class="card shadow-sm border-0 rounded-4 sticky-top" style="top:20px;">
+                <img src="@ViewBag.TourImage"
+                     class="card-img-top rounded-top-4"
+                     style="height:220px; object-fit:cover;"
+                     alt="Tur Fotoğrafı" />
+
+                <div class="card-body">
+                    <h4 class="fw-bold mb-3">@ViewBag.TourTitle</h4>
+
+                    <div class="d-flex justify-content-between mb-2">
+                        <span>Birim Fiyat:</span>
+                        <strong id="unitPriceText">@ViewBag.Price TL</strong>
+                    </div>
+
+                    <hr />
+
+                    <div class="d-flex justify-content-between">
+                        <span>Toplam Tutar:</span>
+                        <strong class="text-success" id="totalPriceText">@ViewBag.Price TL</strong>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</div>
+
+<script>
+    const personCountInput = document.getElementById("personCountInput");
+    const totalPriceText = document.getElementById("totalPriceText");
+    const unitPrice = @ViewBag.Price;
+
+    function updateTotalPrice() {
+        const personCount = parseInt(personCountInput.value) || 1;
+        const total = personCount * unitPrice;
+        totalPriceText.innerText = total + " TL";
+    }
+
+    personCountInput.addEventListener("input", updateTotalPrice);
+    updateTotalPrice();
+</script>

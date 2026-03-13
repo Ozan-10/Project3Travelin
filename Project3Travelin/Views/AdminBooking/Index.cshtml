@@ -1,0 +1,63 @@
+﻿@using Project3Travelin.Dtos.BookingDtos
+@model List<ResultBookingDto>
+
+@{
+    Layout = "~/Views/Shared/_TourLayout.cshtml";
+}
+
+<h2>Rezervasyon Listesi</h2>
+
+<div class="card mb-4 shadow-sm" style="max-width:420px;">
+    <img src="/travelin/images/destination/tour-banner2.jpg"
+         alt="Tur Görseli"
+         class="card-img-top"
+         style="height:220px;object-fit:cover;" />
+
+    <div class="card-body">
+        <h5 class="mb-1">Öne Çıkan Tur</h5>
+        <p class="text-muted mb-0">Rezervasyon yönetim ekranı</p>
+    </div>
+</div>
+
+<table class="table table-bordered">
+    <tr>
+        <th>Ad Soyad</th>
+        <th>Email</th>
+        <th>Kişi Sayısı</th>
+        <th>Tarih</th>
+        <th>Durum</th>
+        <th>İşlem</th>
+    </tr>
+
+    @foreach (var item in Model)
+    {
+        <tr>
+            <td>@item.Name</td>
+            <td>@item.Email</td>
+            <td>@item.PersonCount</td>
+            <td>@item.Date.ToString("dd.MM.yyyy")</td>
+            <td>
+                @if (item.IsApproved)
+                {
+                    <span>Onaylandı</span>
+                }
+                else
+                {
+                    <span>Beklemede</span>
+                }
+            </td>
+            <td>
+                @if (!item.IsApproved)
+                {
+                    <a href="/AdminBooking/ApproveBooking/@item.BookingId" class="btn btn-success btn-sm">Onayla</a>
+                }
+                else
+                {
+                    <span class="text-success">Onaylandı</span>
+                }
+
+                <a href="/AdminBooking/DeleteBooking/@item.BookingId" class="btn btn-danger btn-sm">Sil</a>
+            </td>
+        </tr>
+    }
+</table>

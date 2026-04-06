@@ -51,12 +51,11 @@ Bu projede kullanıcılar tur keşfedebilir, rezervasyon yapabilir ve admin pane
 ---
 
 ### ⚙️ Admin Panel
-<img src="admin-tour.png"/>
-
+![Admin Panel](admin-panel.png)
 ---
 
 ### 📊 Reservation Management
-<img src="customers.png"/>
+![Reservation](customers.png)
 
 ---
 

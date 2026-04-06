@@ -86,7 +86,7 @@ hedeflenmiştir.
 ## 📬 İletişim
 
 📧 Email: ozanengincankuzulu@hotmail.com  
-💼 LinkedIn:(https://www.linkedin.com/in/ozan-engincan-kuzulu-8392031b3/)
+💼 GitHub: (https://github.com/Ozan-10/Project3Travelin)
 
 ---
 

@@ -7,7 +7,7 @@ Modern bir tur rezervasyon uygulamasıdır. ASP.NET Core MVC ve MongoDB kullanı
 - Tur listeleme ve filtreleme
 - Tur detay sayfası
 - Rezervasyon oluşturma
-- Admin paneli (tur & rezervasyon yönetimi)
+- Admin paneli (tur ve rezervasyon yönetimi)
 - Email bildirim sistemi
 - MongoDB ile veri yönetimi
 
@@ -23,14 +23,14 @@ Modern bir tur rezervasyon uygulamasıdır. ASP.NET Core MVC ve MongoDB kullanı
 
 ## 📸 Proje Görselleri
 
+### 🧾 Rezervasyon Sayfası
+![Booking](booking.png)
+
 ### 🗺️ Tur Listesi
 ![Tour List](tour-list.png)
 
 ### 📄 Tur Detay Sayfası
 ![Tour Detail](tour-detail.png)
-
-### 🧾 Rezervasyon Sayfası
-![Booking](booking.png)
 
 ### 🧑‍💼 Admin - Tur Yönetimi
 ![Admin Tour](admin-tour.png)
@@ -39,7 +39,7 @@ Modern bir tur rezervasyon uygulamasıdır. ASP.NET Core MVC ve MongoDB kullanı
 ![Admin Booking](admin-booking.png)
 
 ### 📧 Email Bildirimi
-![Email](email-template.png)
+![Email](email.png)
 
 ## ⚙️ Kurulum
 
@@ -59,7 +59,7 @@ dotnet run
 
 ## 📌 Projenin Amacı
 
-Bu proje, ASP.NET Core MVC ve MongoDB teknolojilerini öğrenmek ve gerçek bir rezervasyon sistemi geliştirmek amacıyla oluşturulmuştur.
+Bu proje, ASP.NET Core MVC ve MongoDB teknolojilerini öğrenmek ve gerçek bir tur rezervasyon sistemi geliştirmek amacıyla oluşturulmuştur.
 
 ## 👨‍💻 Geliştirici
 

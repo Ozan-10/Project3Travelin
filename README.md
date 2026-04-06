@@ -86,7 +86,7 @@ hedeflenmiştir.
 ## 📬 İletişim
 
 📧 Email: ozanengincankuzulu@hotmail.com  
-💼 GitHub: (https://github.com/Ozan-10/Project3Travelin)
+💼 Repo Link: (https://github.com/Ozan-10/Project3Travelin)
 
 ---
 

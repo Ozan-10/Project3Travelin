@@ -22,6 +22,10 @@ Modern bir tur rezervasyon uygulamasıdır. ASP.NET Core MVC ve MongoDB kullanı
 
 ## 📸 Proje Görselleri
 
+### Tur Listesi
+![Tour List](tour-list.png)
+
+
 ## ⚙️ Kurulum
 
 1. Repoyu klonlayın:

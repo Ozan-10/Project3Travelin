@@ -86,7 +86,7 @@ hedeflenmiştir.
 ## 📬 İletişim
 
 📧 Email: ozankuzulu@gmail.com  
-💼 LinkedIn: (buraya linkedin linkini ekle)
+💼 LinkedIn:(https://www.linkedin.com/in/ozan-engincan-kuzulu-8392031b3/)
 
 ---
 

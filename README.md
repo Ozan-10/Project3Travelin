@@ -1,68 +1,92 @@
-# 🌍 Project3Travelin - Tour Booking System
+# 🌍 Project3Travelin - Tour & Booking Management System
 
-Modern bir tur rezervasyon uygulamasıdır. ASP.NET Core MVC ve MongoDB kullanılarak geliştirilmiştir.
+Modern bir **Tur Rezervasyon ve Yönetim Sistemi** geliştirdim.  
+Bu projede kullanıcılar tur keşfedebilir, rezervasyon yapabilir ve admin panel üzerinden tüm süreç yönetilebilir.
 
-## 🚀 Proje Özellikleri
+---
 
-- Tur listeleme ve filtreleme
-- Tur detay sayfası
-- Rezervasyon oluşturma
-- Admin paneli (tur ve rezervasyon yönetimi)
-- Email bildirim sistemi
-- MongoDB ile veri yönetimi
-
-## 🛠️ Kullanılan Teknolojiler
+## 🚀 Kullanılan Teknolojiler
 
 - ASP.NET Core MVC
 - MongoDB
 - AutoMapper
 - Bootstrap
-- HTML
-- CSS
-- JavaScript
+- HTML / CSS / JavaScript
+
+---
+
+## ✨ Proje Özellikleri
+
+✔️ Dinamik tur listeleme  
+✔️ Tur detay sayfası  
+✔️ Rezervasyon oluşturma  
+✔️ Ödeme simülasyonu  
+✔️ Email bildirim sistemi  
+✔️ Admin panel (CRUD işlemleri)  
+✔️ Rezervasyon yönetimi  
+✔️ Responsive tasarım  
+
+---
 
 ## 📸 Proje Görselleri
 
-### 🧾 Rezervasyon Sayfası
-![Booking](booking.png)
+### ✉️ Email Notification
+<img src="email.png"/>
 
-### 🗺️ Tur Listesi
-![Tour List](tour-list.png)
+---
 
-### 📄 Tur Detay Sayfası
-![Tour Detail](tour-detail.png)
+### 🌍 Tour List
+<img src="tour-list.png"/>
 
-### 🧑‍💼 Admin - Tur Yönetimi
-![Admin Tour](admin-tour.png)
+---
 
-### 📊 Admin - Rezervasyon Listesi
-![Admin Booking](admin-booking.png)
+### 💳 Booking & Payment
+<img src="booking.png"/>
 
-### 📧 Email Bildirimi
-![Email](email.png)
+---
 
-## ⚙️ Kurulum
+### 📄 Tour Detail
+<img src="tour-detail.png"/>
 
-1. Repoyu klonlayın:
+---
 
-```bash
-git clone https://github.com/Ozan-10/Project3Travelin.git
-```
+### ⚙️ Admin Panel
+<img src="admin-tour.png"/>
 
-2. MongoDB bağlantı ayarlarını `appsettings.json` içinde düzenleyin.
+---
 
-3. Projeyi çalıştırın:
+### 📊 Reservation Management
+<img src="customers.png"/>
 
-```bash
-dotnet run
-```
+---
 
-## 📌 Projenin Amacı
+## 📌 Genel Bakış
 
-Bu proje, ASP.NET Core MVC ve MongoDB teknolojilerini öğrenmek ve gerçek bir tur rezervasyon sistemi geliştirmek amacıyla oluşturulmuştur.
+Bu projede:
+- MongoDB ile NoSQL veri yönetimi
+- Katmanlı mimari (DTO - Service - Controller)
+- AutoMapper kullanımı
+- Gerçek hayata yakın rezervasyon akışı
 
-## 👨‍💻 Geliştirici
+uygulandı.
 
-**Ozan Kuzulu**
+---
 
-- GitHub: https://github.com/Ozan-10
+## 🎯 Amaç
+
+Bu proje ile:
+- Backend mimariyi güçlendirmek  
+- Gerçek dünya senaryosu geliştirmek  
+- Full-stack mantığını kavramak  
+
+hedeflenmiştir.
+
+---
+
+## 📬 İletişim
+
+📧 Email: ozankuzulu@gmail.com  
+💼 LinkedIn: (buraya linkedin linkini ekle)
+
+---
+
